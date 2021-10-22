@@ -1,0 +1,92 @@
+/* general */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(217, 19%, 35%);
+}
+/*  Main */
+.main {
+  max-width: 70vw;
+  /* min-height: 20rem; */
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 3px 3px 50px lightgray;
+  border-radius: 1rem;
+}
+/* Image */
+.image {
+  background-image: url(../images/drawers.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-basis: 40%;
+  border-radius: 1rem 0 0 1rem;
+}
+/* Content */
+.content {
+  flex-basis: 60%;
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.content__title {
+  margin-top: 0;
+}
+
+.content__description {
+  color: hsl(214, 17%, 51%);
+}
+/* info */
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.author__avatar {
+  width: 40px;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.author__info * {
+  margin: 0;
+}
+
+.author__info--name {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.author__info--date {
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+.share__icon {
+  padding: 1rem;
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 50%;
+  cursor: pointer;
+}
