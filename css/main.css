@@ -109,7 +109,7 @@ body {
   position: relative;
 }
 
-.share__tooltip {
+.tooltip {
   position: absolute;
   top: -70px;
   left: -5.3rem;
@@ -127,12 +127,12 @@ body {
   transition: opacity 0.6s ease-in;
 }
 
-.share__tooltip .active {
+.tooltip.active {
   opacity: 1;
   visibility: visible;
 }
 
-.share__tooltip::before {
+.tooltip::before {
   content: "";
   position: absolute;
   width: 1.4rem;
