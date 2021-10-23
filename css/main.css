@@ -22,7 +22,7 @@ body {
 }
 /*  Main */
 .main {
-  max-width: 70vw;
+  max-width: 1152px;
   /* min-height: 20rem; */
   display: flex;
   justify-content: space-between;
@@ -31,8 +31,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .body {
+    display: block;
+    padding: 0.5rem;
+  }
   .main {
-    flex-direction: column;
+    display: block;
+    min-width: 320px;
+    margin: 0 auto;
   }
 }
 
@@ -61,8 +67,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .content {
-    padding: 10px;
     border-radius: 0 0 1rem 1rem;
+    position: relative;
+    padding-bottom: 1.5rem;
   }
 }
 .content__title {
@@ -79,6 +86,13 @@ body {
   align-items: center;
   margin-top: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .info {
+    margin-top: 2rem;
+  }
+}
+
 .author {
   display: flex;
   align-items: center;
@@ -109,6 +123,12 @@ body {
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .share {
+    position: static;
+  }
+}
+
 .tooltip {
   position: absolute;
   top: -70px;
@@ -124,7 +144,7 @@ body {
   box-shadow: 3px 3px 20px gray;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.6s ease-in;
+  transition: all 0.6s ease-in-out;
 }
 
 .tooltip.active {
@@ -153,9 +173,32 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  .tooltip {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: flex-start;
+    height: 6rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
+
+.tooltip::before {
+  display: none;
+}
+
 .share__icon {
   padding: 1rem;
   background-color: hsl(210, 46%, 95%);
   border-radius: 50%;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .share__icon {
+    position: relative;
+  }
 }
