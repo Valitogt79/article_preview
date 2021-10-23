@@ -104,6 +104,49 @@ body {
   font-size: 0.8rem;
   font-weight: lighter;
 }
+
+.share {
+  position: relative;
+}
+
+.share__tooltip {
+  position: absolute;
+  top: -70px;
+  left: -5.3rem;
+  background-color: hsl(217, 19%, 35%);
+  padding: 1rem 2rem;
+  color: hsl(210, 46%, 95%);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 20px gray;
+}
+
+/* 1:44:11 */
+
+.share__tooltip::before {
+  content: "";
+  position: absolute;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: hsl(217, 19%, 35%);
+  top: 2.5rem;
+  left: calc(50% - 1.2rem);
+  transform: rotate(45deg);
+}
+
+.tooltip__text {
+  font-size: 0.7rem;
+  letter-spacing: 0.3rem;
+}
+
+.tooltip__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .share__icon {
   padding: 1rem;
   background-color: hsl(210, 46%, 95%);
